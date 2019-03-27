@@ -19,8 +19,20 @@ html {
 
 body {
   font-family: "Muli", sans-serif;
-	font-size: 1.6rem;
-	
+  font-size: 1.6rem;
   margin: 0;
   padding: 0;
+}
+
+.content {
+  margin: 0 auto;
+  width: 90%;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
 }

@@ -20,10 +20,10 @@ class Header extends Component {
 					</a>
 				</Link>
 
-				<Link href="/portfolio">
+				<Link href="/portfolios">
 					<a className="Item">
 						{" "}
-						<p>portfolio</p>{" "}
+						<p>portfolios</p>{" "}
 					</a>
 				</Link>
 

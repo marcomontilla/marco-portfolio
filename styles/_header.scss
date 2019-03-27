@@ -1,39 +1,40 @@
 .Header {
   box-sizing: border-box;
   display: flex;
-  align-Items: center;
+  align-items: center;
   justify-content: flex-end;
-  padding: .5rem 3rem;
+  padding: 0.5rem 3rem;
   font-weight: 700;
   color: black;
   width: 100%;
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+}
 
-	& .Item {
-		display: flex;
-		align-content: center;
-		align-Items: center;
-		transform: skewx(-25deg);
-		padding: .5rem 1.5rem;
-		transition: all 0.3s ease-in-out;
-		cursor: pointer;
-		border-radius: 3px;
-		
-		&:link,
-		&:visited,
-		&:hover,
-		&:active {
-			text-decoration: none;
-			color: black;
-		}
+.Item {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  transform: skewx(-25deg);
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 3px;
 
-		&:hover {
-			background-color: var(--color-grey);
-		}
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: black;
+  }
 
-		& p {
-			margin: 0;
-			transform: skewx(25deg);
-		}
-	}
+  &:hover {
+    background-color: var(--color-grey);
+  }
 
+  & p {
+    margin: 0;
+    transform: skewx(25deg);
+  }
 }
