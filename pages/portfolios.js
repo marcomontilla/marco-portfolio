@@ -24,7 +24,6 @@ class Portfolios extends Component {
 			return (
 				<li
 					key={portfolio.id}
-					style={{ textTransform: "capitalize" }}
 					className="Item"
 				>
 					<Link

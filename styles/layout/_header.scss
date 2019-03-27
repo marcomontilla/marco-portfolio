@@ -1,0 +1,27 @@
+.Header {
+  text-transform: lowercase;
+	font-weight: bold;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.8rem 2rem;
+
+  .Item {
+    position: relative; // 'couse of the drop_menu class
+    display: flex;
+    transform: skewx(-25deg);
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $color-grey;
+    }
+
+    & > * {
+      margin: 0;
+      transform: skewx(25deg);
+    }
+  }
+}

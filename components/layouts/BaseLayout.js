@@ -1,15 +1,14 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Header from "../shared/Header";
-import "../../styles/main.scss";
 
-const BaseLayout = props => {
+const BaseLayout = ({ children }) => {
 	return (
-		<Fragment>
+		<div className="main">
 			<Header />
-			<div className="content">
-				{props.children}
-			</div>
-		</Fragment>
+			<main>
+				{children}
+			</main>
+		</div>
 	);
 };
 
