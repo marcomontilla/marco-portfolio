@@ -1,15 +1,19 @@
 import React from "react";
 import Header from "../shared/Header";
 
-const BaseLayout = ({ children }) => {
+const BaseLayout = ({ className, children }) => {
 	return (
-		<div className="main">
+		<div className="layout-container" >
 			<Header />
-			<main>
-				{children}
+			<main className={`cover ${className}`}>
+				<div className="wrapper">
+					{children}
+				</div>
 			</main>
 		</div>
 	);
 };
 
 export default BaseLayout;
+
+

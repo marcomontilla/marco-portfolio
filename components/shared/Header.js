@@ -1,46 +1,40 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 import Link from "next/link";
 
-class Header extends Component {
+class Header extends React.Component {
 	render() {
 		return (
-			<header className="Header">
+			<React.Fragment>
 				<Link href="/">
-					<a className="Item">
-						{" "}
-						<p>Home</p>{" "}
-					</a>
+					<a style={{ fontSize: "20px" }}> Home </a>
 				</Link>
 
 				<Link href="/about">
-					<a className="Item">
-						{" "}
-						<p>About</p>{" "}
-					</a>
+					<a> About </a>
 				</Link>
 
 				<Link href="/portfolios">
-					<a className="Item">
-						{" "}
-						<p>portfolios</p>{" "}
-					</a>
+					<a> Portfolio </a>
 				</Link>
 
-				<Link href="/blog">
-					<a className="Item">
-						{" "}
-						<p>Blog</p>{" "}
-					</a>
+				<Link href="/blogs">
+					<a> Blog </a>
 				</Link>
 
 				<Link href="/cv">
-					<a className="Item">
-						{" "}
-						<p>CV</p>{" "}
-					</a>
+					<a> CV </a>
 				</Link>
-
-			</header>
+				<style jsx>
+					{`
+						a {
+							font-size: 20px;
+						}
+						.customClass {
+							color: red;
+						}
+					`}
+				</style>
+			</React.Fragment>
 		);
 	}
 }

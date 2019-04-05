@@ -1,27 +1,42 @@
-.Header {
-  text-transform: lowercase;
-	font-weight: bold;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0.8rem 2rem;
+.absolute {
+  position: absolute;
+}
 
-  .Item {
-    position: relative; // 'couse of the drop_menu class
-    display: flex;
-    transform: skewx(-25deg);
-    padding: .5rem 1.5rem;
-    cursor: pointer;
-    border-radius: 3px;
-    transition: all 0.3s;
+// HEADER
+.port-navbar.port-default {
+  width: 100%;
+  z-index: 15;
+  padding: 40px;
 
-    &:hover {
-      background-color: $color-grey;
+  .port-navbar {
+    &-brand {
+      color: white;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
     }
 
-    & > * {
-      margin: 0;
-      transform: skewx(25deg);
+    &-item {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    &-link {
+      color: white;
+      font-weight: bold;
+      letter-spacing: 0.8px;
+      font-size: 18px;
+      text-transform: uppercase;
+
+      &.active {
+        color: #dba919;
+      }
+
+      &:hover,
+      &:focus {
+        color: #dba919;
+      }
     }
   }
 }
